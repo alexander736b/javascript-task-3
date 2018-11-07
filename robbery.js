@@ -44,11 +44,7 @@ class Time {
     }
 
     getCorrectTime(time) {
-        if (time.length < 2) {
-            return '0' + time;
-        }
-
-        return time;
+        return time.length < 2 ? `0${time}` : time;
     }
 
     changeTimeZone(timeZone) {
